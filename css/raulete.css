@@ -51,7 +51,7 @@ footer {
 
 div.content {
     margin-top: 36px;
-    margin-bottom: 36px; 
+    margin-bottom: 36px;
     margin-left: 8px;
     margin-right: 8px;
 }
@@ -89,10 +89,7 @@ div.content {
 }
 
 @media only screen and (max-width: 768px) {
-    .main {
-        width: 100%;
-    }
-    .left {
+    .main, .left {
         width: 100%;
     }
     .left p {
@@ -131,7 +128,7 @@ div.content {
     footer {
         display: none;
     }
-    .left {
+    .left, .main {
         width: 100%;
     }
     .contact {
@@ -143,9 +140,6 @@ div.content {
     }
     .name::before {
         content: none;
-    }
-    .main {
-        width: 100%;
     }
     p {
         font-size: 12px;
@@ -194,12 +188,12 @@ div.content {
 header .dropdown-content {
     width: 100%;
     text-align: center;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     background-color: snow;
     right: 0;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content, .dropdown:focus .dropdown-content {
     display: block;
 }
 
