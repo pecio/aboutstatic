@@ -1,0 +1,17 @@
+version: 1
+frontend:
+  phases:
+    build:
+      commands: []
+  artifacts:
+    baseDirectory: /
+    files:
+      - 'index.en.html'
+      - 'index.es.html'
+      - 'resume.en.html'
+      - 'resume.es.html'
+      - 'css/raulete.css'
+      - 'favicon.ico'
+      - 'images/*'
+  cache:
+    paths: []
