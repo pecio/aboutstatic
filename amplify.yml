@@ -11,6 +11,7 @@ frontend:
       - 'resume.en.html'
       - 'resume.es.html'
       - 'css/raulete.css'
+      - 'js/raulete.js'
       - 'favicon.ico'
       - 'images/*'
   cache:
