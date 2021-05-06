@@ -14,12 +14,13 @@
   <link rel="alternate" hreflang="es" href="http://www.raulpedroche.es/es/">
   <link rel="stylesheet" type="text/css" href="css/raulete.css">
   <title>Raúl Pedroche</title>
+  <script type="text/javascript" src="js/raulete.js"></script>
 </head>
 
 <body>
-  <header class="dropdown">
+  <header class="dropdown" onclick="titletoggle()">
     <h1>Resume</h1>
-    <div class="dropdown-content"><a href="index.en.html">About me</a></div>
+    <div class="dropdown-content" id="titlecontent"><a href="index.en.html">About me</a></div>
   </header>
   <div class="content">
     <div class="left">
@@ -95,9 +96,9 @@
       <a href="http://stackoverflow.com/users/706716/raul-pedroche"><img src="images/stackoverflow.png" width="32"
           height="32" alt="[StackOverflow]"></a>
     </div>
-    <div class="languages dropdown">
+    <div class="languages dropdown" onclick="langtoggle()">
       <span>🏴</span>
-      <div class="dropdown-content">
+      <div class="dropdown-content" id="langcontent">
         <span class="lang"><a href="resume.en.html" class="english" hreflang="en">English</a></span>
         <span class="lang"><a href="resume.es.html" class="spanish" hreflang="es-ES">Castellano</a></span>
       </div>
