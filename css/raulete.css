@@ -1,0 +1,210 @@
+body {
+    background-color: azure;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+header {
+    background-color: snow;
+    border-bottom: 1px solid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 32px;
+    width: 100%;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    text-align: center;
+    margin: 0;
+    color: darkslategrey;
+    padding-bottom: 0.5ex;
+    font-weight: bold;
+    height: 36px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: 1px solid;
+}
+
+footer {
+    border-top: 1px solid;
+    padding-top: 0.5ex;
+    padding-left: 0.5em;
+    height: 36px;
+    background-color: snow;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+div.content {
+    margin-top: 36px;
+    margin-bottom: 36px; 
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.left {
+    width: 16.66%;
+    float: left;
+    margin: 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.left p {
+    margin-bottom: 8px;
+}
+
+.name::before {
+    content: "👨‍💻";
+}
+
+.contact {
+    font-size: 80%;
+}
+
+.email::before {
+    content: "📧";
+}
+
+.web::before {
+    content: "🌐";
+}
+
+.main {
+    width: 66.66%;
+    float: left;
+}
+
+@media only screen and (max-width: 768px) {
+    .main {
+        width: 100%;
+    }
+    .left {
+        width: 100%;
+    }
+    .left p {
+        float: left;
+        margin-right: 1em;
+    }
+    .left p.name {
+        float: none;
+    }
+}
+
+.main p {
+    text-indent: 1em;
+    text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.main p.lead {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkslategrey;
+    text-align: center;
+}
+
+.main h4 small {
+    color: darkslategrey;
+}
+
+.main h4 {
+    margin-bottom: 0;
+}
+
+@media print {
+    header {
+        position: relative;
+    }
+    footer {
+        display: none;
+    }
+    .left {
+        width: 100%;
+    }
+    .contact {
+        float: right;
+    }
+    .name {
+        float: left;
+        font-size: 120%;
+    }
+    .name::before {
+        content: none;
+    }
+    .main {
+        width: 100%;
+    }
+    p {
+        font-size: 12px;
+    }
+    h1::after {
+        display: none;
+    }
+}
+
+.social {
+    display: flex;
+    float: left;
+}
+
+.languages {
+    display: flex;
+    float: right;
+    margin-right: 1em;
+}
+
+.lang {
+    margin-block-start: auto;
+    margin-block-end: auto;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    padding: 4px;
+    z-index: 1;
+}
+
+.languages .dropdown-content {
+    right: 100%;
+    top: 0%;
+    text-align: right;
+    background-color: transparent;
+}
+
+header .dropdown-content {
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: snow;
+    right: 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+h1::after {
+    content: "⁝";
+    font-size: 80%;
+    opacity: 50%;
+}
